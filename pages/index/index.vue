@@ -9,10 +9,10 @@
            <view class="h-main">
              <view class="word1">李子杰</view>
              <view class="aihao">
-               <view class="word2">信息编辑</view>
                <view class="word3">爱好</view>
              </view>
            </view>
+           <image class="img-right" src="/static/my/arrow.png" @click="goInformation"/>
          </view>
       </view>
       <view class="title-w">我的服务</view>
@@ -52,7 +52,12 @@ import TabBar from  '../../components/TabBar'
 
 		},
 		methods: {
-
+        goInformation() {
+          console.log('1')
+          uni.navigateTo({
+            url:'/sYePages/my/Information'
+          });
+        }
 		}
 	}
 </script>
@@ -75,11 +80,19 @@ import TabBar from  '../../components/TabBar'
       box-sizing: border-box;
        .header-h {
          display: flex;
+         position: relative;
          >image {
            width: 112upx;
            height: 112upx;
            border-radius: 50%;
            margin-right: 20upx;
+         }
+         .img-right {
+           width: 48upx;
+           height: 48upx;
+           position: absolute;
+           right: -20upx;
+           top:40upx;
          }
          .h-main {
            .word1 {}

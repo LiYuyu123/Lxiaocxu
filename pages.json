@@ -7,6 +7,25 @@
 			}
 		}
 	],
+	"subPackages": [
+		{
+			"root": "sYePages",
+			"pages": [
+				{
+					"path": "index/index",
+					"style": {
+						"navigationBarTitleText": "首页"
+					}
+				},
+				{
+					"path": "my/Information",
+					"style": {
+						"navigationBarTitleText": "个人信息"
+					}
+				}
+				]
+		}
+	  ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

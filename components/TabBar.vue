@@ -21,7 +21,8 @@ export default  {
           {
         name:'首页',
         img:'/static/index/home.png',
-        active:'/static/index/homeSelect.png'
+        active:'/static/index/homeSelect.png',
+        path:'/sYePages/index/index'
       },
         {
           name:'活动',
@@ -35,7 +36,8 @@ export default  {
         },    {
           name:'我的',
           img:'/static/index/my.png',
-          active:'/static/index/mySelect.png'
+          active:'/static/index/mySelect.png',
+          path:'/pages/index/index'
         }
       ]
     }
