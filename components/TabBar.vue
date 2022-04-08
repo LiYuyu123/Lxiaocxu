@@ -1,8 +1,8 @@
 <template>
-  <view class="tab-bar-wrapper">
+  <view class="tab-bar-wrapper ">
       <view class="tab-bar" v-for="(i,index) in tabData" :key="index" @click="goUrl(i)">
          <image :src="tabIndex === index ? i.active:i.img"/>
-         <view>{{ i.name }}</view>
+         <view :class="['tab-word',{'active': tabIndex === index}]">{{ i.name }}</view>
       </view>
   </view>
 </template>
@@ -59,6 +59,8 @@ export default  {
   position: fixed;
   bottom: 0;
   background: white;
+  padding-bottom: constant(safe-area-inset-bottom);// 适配iphone底部圆角的高度
+  padding-bottom: env(safe-area-inset-bottom);
    .tab-bar {
      width: 25%;
      display: flex;
@@ -70,6 +72,16 @@ export default  {
        width: 48upx;
        height: 48upx;
      }
+     .tab-word {
+       font-size: 22upx;
+       color: #b0b1b4;
+     }
+     .active {
+       color: rgba(50, 51, 52, 1);
+     }
    }
+}
+.isScreen {
+  padding-bottom: constant(safe-area-inset-bottom);//iphone底部圆角的高度为34px
 }
 </style>
