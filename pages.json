@@ -22,6 +22,12 @@
 					"style": {
 						"navigationBarTitleText": "个人信息"
 					}
+				},
+				{
+					"path": "squan/login",
+					"style": {
+						"navigationBarTitleText": "授权"
+					}
 				}
 				]
 		}

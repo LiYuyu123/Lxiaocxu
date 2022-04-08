@@ -7,7 +7,7 @@
          <view class="header-h">
            <image src="/static/my/default_avatar.png"/>
            <view class="h-main">
-             <view class="word1" @click="appLoginWx">未登录</view>
+             <view class="word1" @click="goLogin">未登录</view>
              <view class="aihao">
                <view class="word3">爱好</view>
              </view>
@@ -58,28 +58,12 @@ import TabBar from  '../../components/TabBar'
             url:'/sYePages/my/Information'
           });
         },
-        appLoginWx() {
-          uni.getUserProfile({
-            desc:'获取用户基本资料',
-            success: (res)=>{
-              console.log(res)
-              this.userInfo = res.userInfo
-            },
-            fail: ()=>{
-              uni.showModal({
-                title:'授权用户信息失败！',
-                // 是否显示取消按钮，默认为 true
-                showCancel:false
-              })
-            }
-          })
-          uni.login({
-            provider:'weixin',
-            success: (res)=> {
-              console.log(res)
-            },
-          })
-        }
+        goLogin() {
+          console.log('1')
+          uni.navigateTo({
+            url:'/sYePages/squan/login'
+          });
+        },
 		}
 	}
 </script>
