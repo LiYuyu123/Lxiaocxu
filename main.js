@@ -1,12 +1,15 @@
 import App from './App'
-
+import {$http} from "./utils/http";
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
+Vue.prototype.$ajax = $http
 App.mpType = 'app'
 const app = new Vue({
     ...App
 })
+
+
 app.$mount()
 // #endif
 

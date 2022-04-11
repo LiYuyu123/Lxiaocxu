@@ -1,0 +1,32 @@
+.tab-bar-wrapper.data-v-d115a34e {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-bar-wrapper .tab-bar.data-v-d115a34e {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.tab-bar-wrapper .tab-bar > image.data-v-d115a34e {
+  width: 48rpx;
+  height: 48rpx;
+}
+.tab-bar-wrapper .tab-bar .tab-word.data-v-d115a34e {
+  font-size: 22rpx;
+  color: #b0b1b4;
+}
+.tab-bar-wrapper .tab-bar .active.data-v-d115a34e {
+  color: #323334;
+}
+.isScreen.data-v-d115a34e {
+  padding-bottom: constant(safe-area-inset-bottom);
+}
+

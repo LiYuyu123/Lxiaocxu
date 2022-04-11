@@ -1,0 +1,61 @@
+.information.data-v-997e8896 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e7e7e7;
+}
+.information .information-right.data-v-997e8896 {
+  display: flex;
+  align-items: center;
+}
+.information .information-right .input-w.data-v-997e8896 {
+  text-align: right;
+}
+.information .information-right .input-w > image.data-v-997e8896 {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 4px;
+}
+.information .information-right > image.data-v-997e8896 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.must.data-v-997e8896 {
+  position: relative;
+}
+.must.data-v-997e8896::before {
+  content: "*";
+  position: absolute;
+  left: -18rpx;
+  color: red;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.save.data-v-997e8896 {
+  width: 80%;
+  height: 68rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  line-height: 68rpx;
+  background: #007eff;
+  color: #fff;
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.radio-w.data-v-997e8896 {
+  display: flex;
+}
+.radio-w > label.data-v-997e8896 {
+  display: flex;
+}
+.radio-w > label.data-v-997e8896:nth-child(1) {
+  margin-right: 20rpx;
+}
+
